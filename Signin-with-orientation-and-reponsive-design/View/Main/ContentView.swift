@@ -7,11 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View { 
-    
-    @State var isShowSigninForm: Bool = false 
-    var body: some View {
-        
+struct ContentView: View {  
+    var body: some View { 
             if AuthVM().currentUser() == nil {
                 LoginView()
             } else {

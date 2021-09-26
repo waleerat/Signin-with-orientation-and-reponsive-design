@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @AppStorage("isPortrait") private var isPortrait: Bool = false
+    @AppStorage("isAuth") private var isAuth: Bool = false
     var authVM = AuthVM()
     
     @State var selectedLink: String?
@@ -29,12 +30,15 @@ struct HomeView: View {
                  
                 ButtonTextAction(buttonLabel: .constant("Logout")) {
                     authVM.logOutCurrenUser { error in
-                        //
+                        self.isAuth = false
                     }
                 }
                 Spacer()
             }
-        }.modifier(ScreenModifier())
+        }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .modifier(ScreenModifier())
     }
 }
 

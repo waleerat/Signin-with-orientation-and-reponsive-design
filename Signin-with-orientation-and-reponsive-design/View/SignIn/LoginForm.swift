@@ -136,7 +136,7 @@ struct LoginForm: View {
                         } else if !authVM.checkIsCompleteProfile() {
                             self.showCompleateProfileView = true
                         } else {
-                            selectionLink = "HomeView"
+                            selectionLink = "HomeView" 
                         }
                     }
                 }

@@ -19,12 +19,12 @@ struct Signin_with_orientation_and_reponsive_designApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                if AuthVM().currentUser() == nil {
+                if !isAuth {
                     ContentView()
                 } else {
                     HomeView()
                 }
-            } 
+            }.navigationViewStyle(StackNavigationViewStyle())
         }
     }
     

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @AppStorage("isPortrait") private var isPortrait: Bool = false
-    @Binding var isShowSigninForm:Bool
+    @State var isShowSigninForm: Bool = false
     
     var body: some View {
         
@@ -27,7 +27,6 @@ struct LoginView: View {
                     CarouselSlider()
                     // Login Buttons....
                     SigninButtonsView(isShowSigninForm: $isShowSigninForm)
-                    
                 }
             }
         }.modifier(ScreenModifier()) 
@@ -37,6 +36,6 @@ struct LoginView: View {
 
 struct Landscape_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(isShowSigninForm: .constant(false))
+        LoginView()
     }
 }

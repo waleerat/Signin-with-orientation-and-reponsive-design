@@ -27,6 +27,7 @@
 		AB6AD0A826FF1A4B007629A0 /* CarouselSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A726FF1A4A007629A0 /* CarouselSlider.swift */; };
 		AB6AD0AA26FF1CE6007629A0 /* IconAndTextButtonAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A926FF1CE5007629A0 /* IconAndTextButtonAction.swift */; };
 		AB8318282700E5CF00686935 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8318272700E5CF00686935 /* UserModel.swift */; };
+		AB83182C2701148900686935 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB83182B2701148900686935 /* Countries.swift */; };
 		AB8E366926FF218700904713 /* SigninButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E366826FF218700904713 /* SigninButtonsView.swift */; };
 		AB8E366D26FF458000904713 /* CommonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E366C26FF458000904713 /* CommonModifier.swift */; };
 		AB8E367026FF4CE300904713 /* CarouselModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E366F26FF4CE300904713 /* CarouselModel.swift */; };
@@ -66,6 +67,7 @@
 		AB6AD0A726FF1A4A007629A0 /* CarouselSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSlider.swift; sourceTree = "<group>"; };
 		AB6AD0A926FF1CE5007629A0 /* IconAndTextButtonAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconAndTextButtonAction.swift; sourceTree = "<group>"; };
 		AB8318272700E5CF00686935 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		AB83182B2701148900686935 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		AB8E366826FF218700904713 /* SigninButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninButtonsView.swift; sourceTree = "<group>"; };
 		AB8E366C26FF458000904713 /* CommonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModifier.swift; sourceTree = "<group>"; };
 		AB8E366F26FF4CE300904713 /* CarouselModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselModel.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				AB8E367E26FF93EE00904713 /* SignupViaEmailVM.swift */,
 				AB8E367D26FF93EE00904713 /* AuthVM.swift */,
+				AB83182B2701148900686935 /* Countries.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				AB6AD0A226FE5AA7007629A0 /* LottieAnimationView.swift in Sources */,
 				AB8E369026FFDC6300904713 /* UpdateProfileView.swift in Sources */,
 				AB8E368226FF93EE00904713 /* SignupViaEmailVM.swift in Sources */,
+				AB83182C2701148900686935 /* Countries.swift in Sources */,
 				AB8E366926FF218700904713 /* SigninButtonsView.swift in Sources */,
 				AB6AD08926FE3DAF007629A0 /* LoginView.swift in Sources */,
 				AB8E367026FF4CE300904713 /* CarouselModel.swift in Sources */,
