@@ -7,11 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View { 
+    
+    @State var isShowSigninForm: Bool = false 
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+            if AuthVM().currentUser() == nil {
+                LoginView()
+            } else {
+                HomeView()
+            }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

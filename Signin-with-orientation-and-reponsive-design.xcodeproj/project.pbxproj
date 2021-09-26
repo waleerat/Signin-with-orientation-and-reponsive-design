@@ -7,18 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D49B47B90B86591DBB86EE5 /* Pods_Signin_with_orientation_and_reponsive_design.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB0E8A476A1FCAA310719B8 /* Pods_Signin_with_orientation_and_reponsive_design.framework */; };
 		AB6AD07626FE3C4F007629A0 /* Signin_with_orientation_and_reponsive_designApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD07526FE3C4F007629A0 /* Signin_with_orientation_and_reponsive_designApp.swift */; };
 		AB6AD07826FE3C4F007629A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD07726FE3C4F007629A0 /* ContentView.swift */; };
 		AB6AD07A26FE3C52007629A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD07926FE3C52007629A0 /* Assets.xcassets */; };
 		AB6AD07D26FE3C52007629A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD07C26FE3C52007629A0 /* Preview Assets.xcassets */; };
+		AB6AD08526FE3D97007629A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD08426FE3D97007629A0 /* AppDelegate.swift */; };
+		AB6AD08726FE3D9B007629A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD08626FE3D9B007629A0 /* SceneDelegate.swift */; };
+		AB6AD08926FE3DAF007629A0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD08826FE3DAF007629A0 /* LoginView.swift */; };
+		AB6AD08D26FE3DC0007629A0 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD08C26FE3DC0007629A0 /* LoginForm.swift */; };
+		AB6AD09526FE4D4A007629A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09426FE4D49007629A0 /* GoogleService-Info.plist */; };
+		AB6AD09C26FE59DA007629A0 /* lottie-profile.json in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09826FE59D9007629A0 /* lottie-profile.json */; };
+		AB6AD09D26FE59DA007629A0 /* lottie-people-in-autumn-scene.json in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09926FE59D9007629A0 /* lottie-people-in-autumn-scene.json */; };
+		AB6AD09E26FE59DA007629A0 /* lottie-uiux-design.json in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09A26FE59D9007629A0 /* lottie-uiux-design.json */; };
+		AB6AD09F26FE59DA007629A0 /* lottie--profile-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09B26FE59D9007629A0 /* lottie--profile-lock.json */; };
+		AB6AD0A226FE5AA7007629A0 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A126FE5AA7007629A0 /* LottieAnimationView.swift */; };
+		AB6AD0A426FF13F5007629A0 /* DeviceProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A326FF13F5007629A0 /* DeviceProperties.swift */; };
+		AB6AD0A626FF145F007629A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A526FF145F007629A0 /* Constants.swift */; };
+		AB6AD0A826FF1A4B007629A0 /* CarouselSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A726FF1A4A007629A0 /* CarouselSlider.swift */; };
+		AB6AD0AA26FF1CE6007629A0 /* IconAndTextButtonAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A926FF1CE5007629A0 /* IconAndTextButtonAction.swift */; };
+		AB8318282700E5CF00686935 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8318272700E5CF00686935 /* UserModel.swift */; };
+		AB8E366926FF218700904713 /* SigninButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E366826FF218700904713 /* SigninButtonsView.swift */; };
+		AB8E366D26FF458000904713 /* CommonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E366C26FF458000904713 /* CommonModifier.swift */; };
+		AB8E367026FF4CE300904713 /* CarouselModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E366F26FF4CE300904713 /* CarouselModel.swift */; };
+		AB8E367726FF93C300904713 /* VerifyEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E367126FF93C200904713 /* VerifyEmailView.swift */; };
+		AB8E368126FF93EE00904713 /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E367D26FF93EE00904713 /* AuthVM.swift */; };
+		AB8E368226FF93EE00904713 /* SignupViaEmailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E367E26FF93EE00904713 /* SignupViaEmailVM.swift */; };
+		AB8E368626FF940900904713 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E368526FF940900904713 /* FCollectionReference.swift */; };
+		AB8E368926FF953C00904713 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E368826FF953C00904713 /* BlankView.swift */; };
+		AB8E368B26FF963700904713 /* HelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E368A26FF963700904713 /* HelperFunction.swift */; };
+		AB8E368E26FF98F200904713 /* ButtonTextAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E368D26FF98F200904713 /* ButtonTextAction.swift */; };
+		AB8E369026FFDC6300904713 /* UpdateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E368F26FFDC6300904713 /* UpdateProfileView.swift */; };
+		AB8E369226FFDC7800904713 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E369126FFDC7800904713 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41D3CAE3DA02D2AE61D86D27 /* Pods-Signin-with-orientation-and-reponsive-design.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signin-with-orientation-and-reponsive-design.debug.xcconfig"; path = "Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design.debug.xcconfig"; sourceTree = "<group>"; };
+		4600C2696485DE7FBCD65376 /* Pods-Signin-with-orientation-and-reponsive-design.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signin-with-orientation-and-reponsive-design.release.xcconfig"; path = "Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design.release.xcconfig"; sourceTree = "<group>"; };
+		4CB0E8A476A1FCAA310719B8 /* Pods_Signin_with_orientation_and_reponsive_design.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Signin_with_orientation_and_reponsive_design.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6AD07226FE3C4F007629A0 /* Signin-with-orientation-and-reponsive-design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Signin-with-orientation-and-reponsive-design.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6AD07526FE3C4F007629A0 /* Signin_with_orientation_and_reponsive_designApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signin_with_orientation_and_reponsive_designApp.swift; sourceTree = "<group>"; };
 		AB6AD07726FE3C4F007629A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB6AD07926FE3C52007629A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB6AD07C26FE3C52007629A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB6AD08326FE3CE9007629A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6AD08426FE3D97007629A0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB6AD08626FE3D9B007629A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB6AD08826FE3DAF007629A0 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AB6AD08C26FE3DC0007629A0 /* LoginForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		AB6AD09426FE4D49007629A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB6AD09826FE59D9007629A0 /* lottie-profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-profile.json"; sourceTree = "<group>"; };
+		AB6AD09926FE59D9007629A0 /* lottie-people-in-autumn-scene.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-people-in-autumn-scene.json"; sourceTree = "<group>"; };
+		AB6AD09A26FE59D9007629A0 /* lottie-uiux-design.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-uiux-design.json"; sourceTree = "<group>"; };
+		AB6AD09B26FE59D9007629A0 /* lottie--profile-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie--profile-lock.json"; sourceTree = "<group>"; };
+		AB6AD0A126FE5AA7007629A0 /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
+		AB6AD0A326FF13F5007629A0 /* DeviceProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceProperties.swift; sourceTree = "<group>"; };
+		AB6AD0A526FF145F007629A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB6AD0A726FF1A4A007629A0 /* CarouselSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSlider.swift; sourceTree = "<group>"; };
+		AB6AD0A926FF1CE5007629A0 /* IconAndTextButtonAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconAndTextButtonAction.swift; sourceTree = "<group>"; };
+		AB8318272700E5CF00686935 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		AB8E366826FF218700904713 /* SigninButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninButtonsView.swift; sourceTree = "<group>"; };
+		AB8E366C26FF458000904713 /* CommonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModifier.swift; sourceTree = "<group>"; };
+		AB8E366F26FF4CE300904713 /* CarouselModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselModel.swift; sourceTree = "<group>"; };
+		AB8E367126FF93C200904713 /* VerifyEmailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyEmailView.swift; sourceTree = "<group>"; };
+		AB8E367D26FF93EE00904713 /* AuthVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
+		AB8E367E26FF93EE00904713 /* SignupViaEmailVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViaEmailVM.swift; sourceTree = "<group>"; };
+		AB8E368526FF940900904713 /* FCollectionReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
+		AB8E368826FF953C00904713 /* BlankView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		AB8E368A26FF963700904713 /* HelperFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunction.swift; sourceTree = "<group>"; };
+		AB8E368D26FF98F200904713 /* ButtonTextAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTextAction.swift; sourceTree = "<group>"; };
+		AB8E368F26FFDC6300904713 /* UpdateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileView.swift; sourceTree = "<group>"; };
+		AB8E369126FFDC7800904713 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +85,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D49B47B90B86591DBB86EE5 /* Pods_Signin_with_orientation_and_reponsive_design.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22BA4F1C919537C7696D88BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41D3CAE3DA02D2AE61D86D27 /* Pods-Signin-with-orientation-and-reponsive-design.debug.xcconfig */,
+				4600C2696485DE7FBCD65376 /* Pods-Signin-with-orientation-and-reponsive-design.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AB6AD06926FE3C4F007629A0 = {
 			isa = PBXGroup;
 			children = (
 				AB6AD07426FE3C4F007629A0 /* Signin-with-orientation-and-reponsive-design */,
 				AB6AD07326FE3C4F007629A0 /* Products */,
+				22BA4F1C919537C7696D88BF /* Pods */,
+				DB8A51780AD4A6D17B3341AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +122,12 @@
 		AB6AD07426FE3C4F007629A0 /* Signin-with-orientation-and-reponsive-design */ = {
 			isa = PBXGroup;
 			children = (
-				AB6AD07526FE3C4F007629A0 /* Signin_with_orientation_and_reponsive_designApp.swift */,
-				AB6AD07726FE3C4F007629A0 /* ContentView.swift */,
-				AB6AD07926FE3C52007629A0 /* Assets.xcassets */,
+				AB6AD09026FE4C99007629A0 /* Apps */,
+				AB6AD09326FE4CB7007629A0 /* Model */,
+				AB6AD09226FE4CAC007629A0 /* ViewModel */,
+				AB6AD09126FE4CA3007629A0 /* View */,
+				AB6AD09626FE5955007629A0 /* Utility */,
+				AB6AD08326FE3CE9007629A0 /* Info.plist */,
 				AB6AD07B26FE3C52007629A0 /* Preview Content */,
 			);
 			path = "Signin-with-orientation-and-reponsive-design";
@@ -67,6 +141,127 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AB6AD09026FE4C99007629A0 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				AB6AD07526FE3C4F007629A0 /* Signin_with_orientation_and_reponsive_designApp.swift */,
+				AB6AD08426FE3D97007629A0 /* AppDelegate.swift */,
+				AB6AD08626FE3D9B007629A0 /* SceneDelegate.swift */,
+				AB6AD09426FE4D49007629A0 /* GoogleService-Info.plist */,
+				AB6AD07926FE3C52007629A0 /* Assets.xcassets */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		AB6AD09126FE4CA3007629A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E366E26FF488B00904713 /* Main */,
+				AB8E366A26FF219400904713 /* SignIn */,
+				AB6AD0A026FE5A81007629A0 /* HelperView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB6AD09226FE4CAC007629A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E367E26FF93EE00904713 /* SignupViaEmailVM.swift */,
+				AB8E367D26FF93EE00904713 /* AuthVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB6AD09326FE4CB7007629A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB8318272700E5CF00686935 /* UserModel.swift */,
+				AB8E366F26FF4CE300904713 /* CarouselModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB6AD09626FE5955007629A0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E368726FF941D00904713 /* FirebaseListener */,
+				AB8E366B26FF456600904713 /* Modifier */,
+				AB6AD09726FE5971007629A0 /* lottie-Animation */,
+				AB6AD0A526FF145F007629A0 /* Constants.swift */,
+				AB6AD0A326FF13F5007629A0 /* DeviceProperties.swift */,
+				AB8E368A26FF963700904713 /* HelperFunction.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AB6AD09726FE5971007629A0 /* lottie-Animation */ = {
+			isa = PBXGroup;
+			children = (
+				AB6AD09B26FE59D9007629A0 /* lottie--profile-lock.json */,
+				AB6AD09926FE59D9007629A0 /* lottie-people-in-autumn-scene.json */,
+				AB6AD09826FE59D9007629A0 /* lottie-profile.json */,
+				AB6AD09A26FE59D9007629A0 /* lottie-uiux-design.json */,
+			);
+			path = "lottie-Animation";
+			sourceTree = "<group>";
+		};
+		AB6AD0A026FE5A81007629A0 /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E368826FF953C00904713 /* BlankView.swift */,
+				AB8E368D26FF98F200904713 /* ButtonTextAction.swift */,
+				AB6AD0A126FE5AA7007629A0 /* LottieAnimationView.swift */,
+				AB6AD0A926FF1CE5007629A0 /* IconAndTextButtonAction.swift */,
+			);
+			path = HelperView;
+			sourceTree = "<group>";
+		};
+		AB8E366A26FF219400904713 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				AB6AD08826FE3DAF007629A0 /* LoginView.swift */,
+				AB6AD0A726FF1A4A007629A0 /* CarouselSlider.swift */,
+				AB6AD08C26FE3DC0007629A0 /* LoginForm.swift */,
+				AB8E367126FF93C200904713 /* VerifyEmailView.swift */,
+				AB8E366826FF218700904713 /* SigninButtonsView.swift */,
+				AB8E368F26FFDC6300904713 /* UpdateProfileView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		AB8E366B26FF456600904713 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E366C26FF458000904713 /* CommonModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		AB8E366E26FF488B00904713 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E369126FFDC7800904713 /* HomeView.swift */,
+				AB6AD07726FE3C4F007629A0 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AB8E368726FF941D00904713 /* FirebaseListener */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E368526FF940900904713 /* FCollectionReference.swift */,
+			);
+			path = FirebaseListener;
+			sourceTree = "<group>";
+		};
+		DB8A51780AD4A6D17B3341AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB0E8A476A1FCAA310719B8 /* Pods_Signin_with_orientation_and_reponsive_design.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB6AD08026FE3C52007629A0 /* Build configuration list for PBXNativeTarget "Signin-with-orientation-and-reponsive-design" */;
 			buildPhases = (
+				E2E2F98F79E2DDFA84E30E4A /* [CP] Check Pods Manifest.lock */,
 				AB6AD06E26FE3C4F007629A0 /* Sources */,
 				AB6AD06F26FE3C4F007629A0 /* Frameworks */,
 				AB6AD07026FE3C4F007629A0 /* Resources */,
+				15A0B07BD059EB876EA30B00 /* [CP] Embed Pods Frameworks */,
+				45EFDF4B5CFD1B6AF959703D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,19 +324,105 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB6AD07D26FE3C52007629A0 /* Preview Assets.xcassets in Resources */,
+				AB6AD09E26FE59DA007629A0 /* lottie-uiux-design.json in Resources */,
+				AB6AD09D26FE59DA007629A0 /* lottie-people-in-autumn-scene.json in Resources */,
 				AB6AD07A26FE3C52007629A0 /* Assets.xcassets in Resources */,
+				AB6AD09C26FE59DA007629A0 /* lottie-profile.json in Resources */,
+				AB6AD09F26FE59DA007629A0 /* lottie--profile-lock.json in Resources */,
+				AB6AD09526FE4D4A007629A0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15A0B07BD059EB876EA30B00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45EFDF4B5CFD1B6AF959703D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E2F98F79E2DDFA84E30E4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Signin-with-orientation-and-reponsive-design-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB6AD06E26FE3C4F007629A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8E368E26FF98F200904713 /* ButtonTextAction.swift in Sources */,
+				AB6AD0A426FF13F5007629A0 /* DeviceProperties.swift in Sources */,
+				AB6AD0A626FF145F007629A0 /* Constants.swift in Sources */,
+				AB6AD0A226FE5AA7007629A0 /* LottieAnimationView.swift in Sources */,
+				AB8E369026FFDC6300904713 /* UpdateProfileView.swift in Sources */,
+				AB8E368226FF93EE00904713 /* SignupViaEmailVM.swift in Sources */,
+				AB8E366926FF218700904713 /* SigninButtonsView.swift in Sources */,
+				AB6AD08926FE3DAF007629A0 /* LoginView.swift in Sources */,
+				AB8E367026FF4CE300904713 /* CarouselModel.swift in Sources */,
+				AB6AD08526FE3D97007629A0 /* AppDelegate.swift in Sources */,
 				AB6AD07826FE3C4F007629A0 /* ContentView.swift in Sources */,
+				AB8E369226FFDC7800904713 /* HomeView.swift in Sources */,
+				AB8E368926FF953C00904713 /* BlankView.swift in Sources */,
+				AB8E366D26FF458000904713 /* CommonModifier.swift in Sources */,
+				AB8E367726FF93C300904713 /* VerifyEmailView.swift in Sources */,
 				AB6AD07626FE3C4F007629A0 /* Signin_with_orientation_and_reponsive_designApp.swift in Sources */,
+				AB8E368126FF93EE00904713 /* AuthVM.swift in Sources */,
+				AB8E368626FF940900904713 /* FCollectionReference.swift in Sources */,
+				AB6AD08D26FE3DC0007629A0 /* LoginForm.swift in Sources */,
+				AB6AD0A826FF1A4B007629A0 /* CarouselSlider.swift in Sources */,
+				AB8E368B26FF963700904713 /* HelperFunction.swift in Sources */,
+				AB6AD0AA26FF1CE6007629A0 /* IconAndTextButtonAction.swift in Sources */,
+				AB6AD08726FE3D9B007629A0 /* SceneDelegate.swift in Sources */,
+				AB8318282700E5CF00686935 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -251,6 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -263,6 +549,7 @@
 		};
 		AB6AD08126FE3C52007629A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D3CAE3DA02D2AE61D86D27 /* Pods-Signin-with-orientation-and-reponsive-design.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -272,6 +559,7 @@
 				DEVELOPMENT_TEAM = ZD74G4QNW2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Signin-with-orientation-and-reponsive-design/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,6 +581,7 @@
 		};
 		AB6AD08226FE3C52007629A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4600C2696485DE7FBCD65376 /* Pods-Signin-with-orientation-and-reponsive-design.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +591,7 @@
 				DEVELOPMENT_TEAM = ZD74G4QNW2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Signin-with-orientation-and-reponsive-design/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
