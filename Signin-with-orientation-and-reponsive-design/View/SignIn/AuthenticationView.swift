@@ -18,6 +18,7 @@ struct AuthenticationView: View {
                 VStack{
                     // Note: - Carousel SLider...
                     CarouselSlider()
+                    Spacer()
                     // Login Buttons....
                     SigninView(isShowSigninForm: $isShowSigninForm) 
                 }

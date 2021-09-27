@@ -16,17 +16,10 @@
 		AB6AD08726FE3D9B007629A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD08626FE3D9B007629A0 /* SceneDelegate.swift */; };
 		AB6AD08926FE3DAF007629A0 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD08826FE3DAF007629A0 /* AuthenticationView.swift */; };
 		AB6AD09526FE4D4A007629A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09426FE4D49007629A0 /* GoogleService-Info.plist */; };
-		AB6AD09C26FE59DA007629A0 /* lottie-profile.json in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09826FE59D9007629A0 /* lottie-profile.json */; };
-		AB6AD09D26FE59DA007629A0 /* lottie-people-in-autumn-scene.json in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09926FE59D9007629A0 /* lottie-people-in-autumn-scene.json */; };
-		AB6AD09E26FE59DA007629A0 /* lottie-uiux-design.json in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09A26FE59D9007629A0 /* lottie-uiux-design.json */; };
-		AB6AD09F26FE59DA007629A0 /* lottie--profile-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = AB6AD09B26FE59D9007629A0 /* lottie--profile-lock.json */; };
-		AB6AD0A226FE5AA7007629A0 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A126FE5AA7007629A0 /* LottieAnimationView.swift */; };
 		AB6AD0A426FF13F5007629A0 /* DeviceProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A326FF13F5007629A0 /* DeviceProperties.swift */; };
 		AB6AD0A626FF145F007629A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A526FF145F007629A0 /* Constants.swift */; };
-		AB6AD0A826FF1A4B007629A0 /* CarouselSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A726FF1A4A007629A0 /* CarouselSlider.swift */; };
 		AB6AD0AA26FF1CE6007629A0 /* IconAndTextButtonAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AD0A926FF1CE5007629A0 /* IconAndTextButtonAction.swift */; };
 		AB8318282700E5CF00686935 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8318272700E5CF00686935 /* UserModel.swift */; };
-		AB83182C2701148900686935 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB83182B2701148900686935 /* Countries.swift */; };
 		AB8E366926FF218700904713 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E366826FF218700904713 /* SigninView.swift */; };
 		AB8E366D26FF458000904713 /* CommonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E366C26FF458000904713 /* CommonModifier.swift */; };
 		AB8E367026FF4CE300904713 /* CarouselModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E366F26FF4CE300904713 /* CarouselModel.swift */; };
@@ -39,6 +32,7 @@
 		AB8E368E26FF98F200904713 /* ButtonTextAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E368D26FF98F200904713 /* ButtonTextAction.swift */; };
 		AB8E369026FFDC6300904713 /* UpdateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E368F26FFDC6300904713 /* UpdateProfileView.swift */; };
 		AB8E369226FFDC7800904713 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E369126FFDC7800904713 /* HomeView.swift */; };
+		AB9CA7202701C7B000DCE07D /* CarouselSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA71F2701C7B000DCE07D /* CarouselSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,17 +49,10 @@
 		AB6AD08626FE3D9B007629A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AB6AD08826FE3DAF007629A0 /* AuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		AB6AD09426FE4D49007629A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AB6AD09826FE59D9007629A0 /* lottie-profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-profile.json"; sourceTree = "<group>"; };
-		AB6AD09926FE59D9007629A0 /* lottie-people-in-autumn-scene.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-people-in-autumn-scene.json"; sourceTree = "<group>"; };
-		AB6AD09A26FE59D9007629A0 /* lottie-uiux-design.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-uiux-design.json"; sourceTree = "<group>"; };
-		AB6AD09B26FE59D9007629A0 /* lottie--profile-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie--profile-lock.json"; sourceTree = "<group>"; };
-		AB6AD0A126FE5AA7007629A0 /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
 		AB6AD0A326FF13F5007629A0 /* DeviceProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceProperties.swift; sourceTree = "<group>"; };
 		AB6AD0A526FF145F007629A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		AB6AD0A726FF1A4A007629A0 /* CarouselSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSlider.swift; sourceTree = "<group>"; };
 		AB6AD0A926FF1CE5007629A0 /* IconAndTextButtonAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconAndTextButtonAction.swift; sourceTree = "<group>"; };
 		AB8318272700E5CF00686935 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		AB83182B2701148900686935 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		AB8E366826FF218700904713 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		AB8E366C26FF458000904713 /* CommonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModifier.swift; sourceTree = "<group>"; };
 		AB8E366F26FF4CE300904713 /* CarouselModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselModel.swift; sourceTree = "<group>"; };
@@ -78,6 +65,7 @@
 		AB8E368D26FF98F200904713 /* ButtonTextAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTextAction.swift; sourceTree = "<group>"; };
 		AB8E368F26FFDC6300904713 /* UpdateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileView.swift; sourceTree = "<group>"; };
 		AB8E369126FFDC7800904713 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AB9CA71F2701C7B000DCE07D /* CarouselSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +156,6 @@
 			children = (
 				AB8E367E26FF93EE00904713 /* SignupViaEmailVM.swift */,
 				AB8E367D26FF93EE00904713 /* AuthVM.swift */,
-				AB83182B2701148900686935 /* Countries.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,7 +174,6 @@
 			children = (
 				AB8E368726FF941D00904713 /* FirebaseListener */,
 				AB8E366B26FF456600904713 /* Modifier */,
-				AB6AD09726FE5971007629A0 /* lottie-Animation */,
 				AB6AD0A526FF145F007629A0 /* Constants.swift */,
 				AB6AD0A326FF13F5007629A0 /* DeviceProperties.swift */,
 				AB8E368A26FF963700904713 /* HelperFunction.swift */,
@@ -195,23 +181,11 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		AB6AD09726FE5971007629A0 /* lottie-Animation */ = {
-			isa = PBXGroup;
-			children = (
-				AB6AD09B26FE59D9007629A0 /* lottie--profile-lock.json */,
-				AB6AD09926FE59D9007629A0 /* lottie-people-in-autumn-scene.json */,
-				AB6AD09826FE59D9007629A0 /* lottie-profile.json */,
-				AB6AD09A26FE59D9007629A0 /* lottie-uiux-design.json */,
-			);
-			path = "lottie-Animation";
-			sourceTree = "<group>";
-		};
 		AB6AD0A026FE5A81007629A0 /* HelperView */ = {
 			isa = PBXGroup;
 			children = (
 				AB8E368826FF953C00904713 /* BlankView.swift */,
 				AB8E368D26FF98F200904713 /* ButtonTextAction.swift */,
-				AB6AD0A126FE5AA7007629A0 /* LottieAnimationView.swift */,
 				AB6AD0A926FF1CE5007629A0 /* IconAndTextButtonAction.swift */,
 			);
 			path = HelperView;
@@ -221,10 +195,10 @@
 			isa = PBXGroup;
 			children = (
 				AB6AD08826FE3DAF007629A0 /* AuthenticationView.swift */,
-				AB6AD0A726FF1A4A007629A0 /* CarouselSlider.swift */,
 				AB8E367126FF93C200904713 /* VerifyEmailView.swift */,
 				AB8E366826FF218700904713 /* SigninView.swift */,
 				AB8E368F26FFDC6300904713 /* UpdateProfileView.swift */,
+				AB9CA71F2701C7B000DCE07D /* CarouselSlider.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -274,7 +248,6 @@
 				AB6AD06F26FE3C4F007629A0 /* Frameworks */,
 				AB6AD07026FE3C4F007629A0 /* Resources */,
 				15A0B07BD059EB876EA30B00 /* [CP] Embed Pods Frameworks */,
-				45EFDF4B5CFD1B6AF959703D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,11 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB6AD07D26FE3C52007629A0 /* Preview Assets.xcassets in Resources */,
-				AB6AD09E26FE59DA007629A0 /* lottie-uiux-design.json in Resources */,
-				AB6AD09D26FE59DA007629A0 /* lottie-people-in-autumn-scene.json in Resources */,
 				AB6AD07A26FE3C52007629A0 /* Assets.xcassets in Resources */,
-				AB6AD09C26FE59DA007629A0 /* lottie-profile.json in Resources */,
-				AB6AD09F26FE59DA007629A0 /* lottie--profile-lock.json in Resources */,
 				AB6AD09526FE4D4A007629A0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,23 +320,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		45EFDF4B5CFD1B6AF959703D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Signin-with-orientation-and-reponsive-design/Pods-Signin-with-orientation-and-reponsive-design-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2E2F98F79E2DDFA84E30E4A /* [CP] Check Pods Manifest.lock */ = {
@@ -402,12 +354,11 @@
 				AB8E368E26FF98F200904713 /* ButtonTextAction.swift in Sources */,
 				AB6AD0A426FF13F5007629A0 /* DeviceProperties.swift in Sources */,
 				AB6AD0A626FF145F007629A0 /* Constants.swift in Sources */,
-				AB6AD0A226FE5AA7007629A0 /* LottieAnimationView.swift in Sources */,
 				AB8E369026FFDC6300904713 /* UpdateProfileView.swift in Sources */,
 				AB8E368226FF93EE00904713 /* SignupViaEmailVM.swift in Sources */,
-				AB83182C2701148900686935 /* Countries.swift in Sources */,
 				AB8E366926FF218700904713 /* SigninView.swift in Sources */,
 				AB6AD08926FE3DAF007629A0 /* AuthenticationView.swift in Sources */,
+				AB9CA7202701C7B000DCE07D /* CarouselSlider.swift in Sources */,
 				AB8E367026FF4CE300904713 /* CarouselModel.swift in Sources */,
 				AB6AD08526FE3D97007629A0 /* AppDelegate.swift in Sources */,
 				AB6AD07826FE3C4F007629A0 /* ContentView.swift in Sources */,
@@ -418,7 +369,6 @@
 				AB6AD07626FE3C4F007629A0 /* Signin_with_orientation_and_reponsive_designApp.swift in Sources */,
 				AB8E368126FF93EE00904713 /* AuthVM.swift in Sources */,
 				AB8E368626FF940900904713 /* FCollectionReference.swift in Sources */,
-				AB6AD0A826FF1A4B007629A0 /* CarouselSlider.swift in Sources */,
 				AB8E368B26FF963700904713 /* HelperFunction.swift in Sources */,
 				AB6AD0AA26FF1CE6007629A0 /* IconAndTextButtonAction.swift in Sources */,
 				AB6AD08726FE3D9B007629A0 /* SceneDelegate.swift in Sources */,

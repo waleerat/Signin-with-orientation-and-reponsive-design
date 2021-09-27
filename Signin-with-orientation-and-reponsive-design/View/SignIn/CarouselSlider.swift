@@ -11,20 +11,17 @@ struct CarouselSlider: View {
     @AppStorage("isPortrait") private var isPortrait: Bool = false
     
     @State var currentIndex : Int = 1
-    @State var show:Bool = false
     var body: some View {
         VStack {
             TabView(selection: $currentIndex){
                 SliderItem(currentIndex: $currentIndex)
             }
-            
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-             
+            Spacer()
             CustomTabIndicator(count: 3, current: $currentIndex)
                 .padding(.vertical,isSmallDevice ? 10 : 15)
                 .padding(.top)
         }
-        
     }
 }
 
@@ -33,8 +30,6 @@ struct SliderItem: View{
     @AppStorage("isPortrait") private var isPortrait: Bool = false
     
     @Binding var currentIndex: Int
-   
-    
     var body: some View{
          
         ForEach(1...Carousels.count,id: \.self){ index in
@@ -60,19 +55,14 @@ struct SliderItem: View{
                 
                 return AnyView(
                 
-                    VStack{
-                        Image(Carousels[index - 1].imageAsset)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: isIpad ? 400 : 200)
-                        
+                    VStack(spacing: 20){
                         Text(Carousels[index - 1].topic)
-                            .modifier(TextBoldModifier(fontStyle: .header))
+                            .modifier(TextBoldModifier(fontStyle: .header, foregroundColor: Color.white))
                             .padding(.horizontal)
                             .padding(.top,20)
                         
                         Text(Carousels[index - 1].description)
-                            .modifier(TextBoldModifier(fontStyle: .description))
+                            .modifier(TextBoldModifier(fontStyle: .description, foregroundColor: Color.white))
                             .padding(.horizontal)
                             .padding(.top,10)
                     }
@@ -81,7 +71,6 @@ struct SliderItem: View{
                     .scaleEffect(scale)
                 )
             }
-           
             .tag(index)
              
         }
