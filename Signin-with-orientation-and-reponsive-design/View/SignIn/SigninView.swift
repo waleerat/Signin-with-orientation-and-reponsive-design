@@ -93,9 +93,9 @@ struct LoginForm: View {
     @Binding var isSignup:Bool
     
     @State var show = false
-    @State var email = "waleerat.sang@gmail.com"
-    @State var password = "1234567890"
-    @State var repeatPassword = "1234567890"
+    @State var email = ""
+    @State var password = ""
+    @State var repeatPassword = ""
     
     // Note: - Helper variable
     @State var showAlertMessage:Bool = false
@@ -112,7 +112,7 @@ struct LoginForm: View {
                     .modifier(TextBoldModifier(fontStyle: .common))
                     
                 HStack(spacing: 15){
-                    TextField("Input Email", text: $email)
+                    TextField("Enter Email", text: $email)
                         .modifier(TextInputModifier())
                 }
                 Divider().background(Color.white)
@@ -120,7 +120,7 @@ struct LoginForm: View {
                 Text("Password")
                     .modifier(TextBoldModifier(fontStyle: .common))
                 HStack(spacing: 15){
-                    TextField("Input Password", text: $password)
+                    SecureField("Enter a password", text: $password)
                         .modifier(TextInputModifier())
                 }
                 Divider().background(Color.white)
@@ -130,7 +130,7 @@ struct LoginForm: View {
                     Text("Replete Password")
                         .modifier(TextBoldModifier(fontStyle: .common))
                     HStack(spacing: 15){
-                        TextField("Input replete password", text: $repeatPassword)
+                        SecureField("Enter a password", text: $repeatPassword)
                             .modifier(TextInputModifier())
                     }
                     Divider().background(Color.white)

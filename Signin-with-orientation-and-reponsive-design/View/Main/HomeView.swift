@@ -34,9 +34,7 @@ struct HomeView: View {
                 LazyVGrid(columns: Array(repeating: .init(.flexible()), count: isPortrait ? 1 : 2), alignment: .center, spacing: 10) {
                     
                     ButtonTextAction(buttonLabel: .constant("Update Profile"),backgroundColor: Color.green.opacity(0.7)) {
-                        authVM.logOutCurrenUser { error in
-                            selectionLink = "UpdateProfileView"
-                        }
+                        selectionLink = "UpdateProfileView"
                     }
                     
                     ButtonTextAction(buttonLabel: .constant("Logout"),backgroundColor: Color.green.opacity(0.7)) {
