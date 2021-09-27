@@ -21,9 +21,9 @@
 
 6. ✨Well done, now you will be able to see the CMS screen.
 Finder.png
-<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Lanscape.png" width="50%" height="50%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Lanscape2.png" width="50%" height="50%">
+<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Lanscape1.png" width="50%" height="50%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Lanscape2.png" width="50%" height="50%">
 
-<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait.png" width="50%" height="50%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait1.png" width="50%" height="50%">
+<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait.png" width="20%" height="20%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait1.png" width="20%" height="20%">
 
 
 
@@ -34,7 +34,7 @@ When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t 
 2. Delete Class Name  put `$(PRODUCT_MODULE_NAME).SceneDelegate`
 3. Configuration Name  put  `Default Configuration`  
 
-<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Application-Section-Role" width="50%" height="50%">
+<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Application-Section-Role.png" width="50%" height="50%">
 
 
 
