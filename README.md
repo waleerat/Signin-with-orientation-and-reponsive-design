@@ -7,7 +7,7 @@ Example for signup via email, verify email, update profile with orientation and 
 ### How to install
 
 1. Download project to your Mac
-<img src="https://github.com/waleerat/GitHub-Photos-Shared/main/Signin-with-orientation-and-reponsive-design/download-xcode.png" width="70%" height="70%">
+<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/download-xcode.png" width="70%" height="70%">
 
 2. Setup firebase `https://firebase.google.com/docs/ios/setup`
 
