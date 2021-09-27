@@ -21,9 +21,9 @@
 
 6. ✨Well done, now you will be able to see the CMS screen.
 Finder.png
-<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Lanscape1.png" width="50%" height="50%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Lanscape2.png" width="50%" height="50%">
+<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Lanscape1.png" width="30%" height="30%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Lanscape2.png" width="30%" height="30%">
 
-<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait.png" width="20%" height="20%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait1.png" width="20%" height="20%">
+<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait.png" width="20%" height="20%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait2.png?raw=true" width="20%" height="20%">
 
 
 
