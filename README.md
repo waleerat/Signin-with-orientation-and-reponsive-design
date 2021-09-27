@@ -1,7 +1,8 @@
-# Firebase Email Authentication 
+# Firebase Signup via Email
 ### Xcode Version 13.0
 ###### SwiftUI, Firebase
 
+Example for signup via email, verify email, update profile with orientation and responsive design.
 
 ### How to install
 
@@ -40,6 +41,7 @@ When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t 
 
 
 ### plist.info
+
 
 ```sh
  <?xml version="1.0" encoding="UTF-8"?>
