@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {  
     var body: some View { 
             if AuthVM().currentUser() == nil {
-                LoginView()
+                AuthenticationView()
             } else {
                 HomeView()
             }

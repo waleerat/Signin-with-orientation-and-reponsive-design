@@ -9,7 +9,6 @@ import SwiftUI
 import Lottie
 
 struct LottieAnimationView: UIViewRepresentable {
-    @Binding var show: Bool
     @State var lottieFileName: String
     
     func makeUIView(context: Context) -> AnimationView{
@@ -19,13 +18,6 @@ struct LottieAnimationView: UIViewRepresentable {
         // on Complete....
         view.play { (status) in
             
-            if status{
-                
-                // toggling view...
-                withAnimation(.interactiveSpring(response: 0.7, dampingFraction: 0.8, blendDuration: 0.8)){
-                    show.toggle()
-                }
-            }
         }
         
         return view

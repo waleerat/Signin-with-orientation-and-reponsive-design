@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct UpdateProfileView: View {
-    @ObservedObject var authVM = AuthVM()
+    @AppStorage("isPortrait") private var isPortrait: Bool = false
     
+    @ObservedObject var authVM = AuthVM()
     @State var name = ""
     @State var surname = ""
     @State var telephone = ""
@@ -18,72 +19,79 @@ struct UpdateProfileView: View {
     @State var selectionLink:String?
     
     var body: some View {
-        VStack {
-            Text("Update Profile")
-                .modifier(TextBoldModifier(fontStyle: .header))
-            
-            
-            VStack(alignment: .leading, spacing: 10) {
-                // Note: - Surname
-                Text("Name")
-                    .modifier(TextInputModifier())
-                HStack(spacing: 15){
-                    TextField("Name", text: $name)
-                }
-                 
-                // Note: - Surname
-                Text("Surname")
-                    .modifier(TextInputModifier())
-                HStack(spacing: 15){
-                    TextField("Surname", text: $surname)
+        ZStack {
+            VStack {
+                Text("Update Profile")
+                    .modifier(TextBoldModifier(fontStyle: .header))
+                Spacer()
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    // Note: - Surname
+                    Text("Name")
+                        .modifier(TextBoldModifier(fontStyle: .common))
+                    HStack(spacing: 15){
+                        TextField("Name", text: $name)
+                            .modifier(TextInputModifier())
+                    }
+                     
+                    // Note: - Surname
+                    Text("Surname")
+                        .modifier(TextBoldModifier(fontStyle: .common))
+                    HStack(spacing: 15){
+                        TextField("Surname", text: $surname)
+                            .modifier(TextInputModifier())
+                    }
+                    
+                    // Note: - telephone
+                    Text("Phone Number")
+                        .modifier(TextBoldModifier(fontStyle: .common))
+                    HStack(spacing: 15){
+                        TextField("Phone Number", text: $telephone)
+                            .modifier(TextInputModifier())
+                    }
+                     
+                    // Note: - telephone
+                    Text("Address")
+                        .modifier(TextBoldModifier(fontStyle: .common))
+                    HStack(spacing: 15){
+                        TextField("Address", text: $address)
+                            .modifier(TextInputModifier())
+                    }
+                    
                 }
                 
-                // Note: - telephone
-                Text("Phone Number")
-                    .modifier(TextInputModifier())
-                HStack(spacing: 15){
-                    TextField("Phone Number", text: $telephone)
+                Button {
+                    SaveToFirebase()
+                } label: {
+                    HStack{
+                        Text("Update Profile")
+                            .modifier(TextBoldModifier(fontStyle: .common, foregroundColor: .white))
+                            .frame(maxWidth: 120, alignment: .center)
+                    }
+                    .padding(.vertical,13)
+                    .padding(.horizontal)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(iserifyCompleted() ? Color.blue : Color.gray)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.white,lineWidth: 1)
+                            )
+                    )
                 }
-                 
-                // Note: - telephone
-                Text("Address")
-                    .modifier(TextInputModifier())
-                HStack(spacing: 15){
-                    TextField("Address", text: $address)
-                }
-                
-            }
+                .disabled(!iserifyCompleted())
+                Spacer()
+                NavigationLink(destination: HomeView(), tag: "HomeView", selection: $selectionLink) { EmptyView() }
+            }//:VStack
             
-            Button {
-                SaveToFirebase()
-            } label: {
-                HStack{
-                    Text("Update Profile")
-                        .modifier(TextBoldModifier(fontStyle: .common, foregroundColor: .white))
-                        .frame(maxWidth: 120, alignment: .center)
-                }
-                .padding(.vertical,13)
-                .padding(.horizontal)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(iserifyCompleted() ? Color.blue : Color.gray)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white,lineWidth: 1)
-                        )
-                )
-            }
-            .disabled(!iserifyCompleted())
- 
+            .background(Color.accentColor.opacity(0.2))
+            .padding()
+            .cornerRadius(10)
             
-            NavigationLink(destination: HomeView(), tag: "HomeView", selection: $selectionLink) { EmptyView() }
+            
         }
-        .padding()
-        .background(Color(kScreenBg))
-        .cornerRadius(20)
-        .padding()
-        
-        }
+        .modifier(NavigationBarHiddenModifier())
+    }
 
     // Note: - Helper Function
     func iserifyCompleted() -> Bool{

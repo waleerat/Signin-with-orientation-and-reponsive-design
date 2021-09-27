@@ -16,13 +16,10 @@ struct CarouselModel: Identifiable,Hashable {
 
 
 var Carousels: [CarouselModel] = [
-    CarouselModel(id: UUID().uuidString, imageAsset: "apple", topic: "Do you know?", description: "When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t have an Info.plist file."),
-    CarouselModel(id: UUID().uuidString, imageAsset: "gmail", topic: "To detact orientation we need Scene Delegate", description: """
-But you need to set in Info.plist.
-
-How to fix this issue?
-you can find the setting on my git repository.
+    CarouselModel(id: UUID().uuidString, imageAsset: "pic1", topic: "Do you know?", description: "When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t have an Info.plist file."),
+    CarouselModel(id: UUID().uuidString, imageAsset: "pic2", topic: "To detact orientation", description: """
+We need set Scene Delegate in Info.plist. you can find the setting on my git repository. 
 """),
-    CarouselModel(id: UUID().uuidString, imageAsset: "email", topic: "Thank you", description: "Enjoy your learning")
+    CarouselModel(id: UUID().uuidString, imageAsset: "pic3", topic: "Thank you", description: "Enjoy your learning")
 ]
  

@@ -1,11 +1,88 @@
 //
-//  LoginForm.swift
-//  SwiftUI-device-orientation-and-reponsive-design
+//  SigninButtonsView.swift
+//  Signin-with-orientation-and-reponsive-design
 //
-//  Created by Waleerat Gottlieb on 2021-09-24.
+//  Created by Waleerat Gottlieb on 2021-09-25.
 //
 
 import SwiftUI
+
+struct SigninView: View {
+    @Binding var isShowSigninForm:Bool
+    @State var isSignup:Bool = false
+    
+    var body: some View {
+        ZStack {
+            VStack(spacing: 15){
+                
+                IconAndTextButtonAction(imageAsset: "email",
+                                        text: "Sign up with Email    ",
+                                        foregroundColor: Color.white,
+                                        backgroundColor: Color.green.opacity(0.7)
+                                        , action: {
+                    
+                    isSignup = true
+                    isShowSigninForm = true
+                })
+                
+                IconAndTextButtonAction(systemName: "applelogo",
+                                        text: "Sign up with Apple  ",
+                                        foregroundColor: Color.black,
+                                        backgroundColor: Color.white
+                                        , action: {
+                    
+                    print("Sign up with Apple")
+                })
+                
+                IconAndTextButtonAction(imageAsset: "google",
+                                        text: "Sign up with Google",
+                                        foregroundColor: Color.white,
+                                        backgroundColor: Color.red.opacity(0.7)
+                                        , action: {
+                    
+                    print("Sign up with Google")
+                })
+                 
+                HStack{
+                    
+                    Text("Already have an account?")
+                        .modifier(TextRegularModifier(fontStyle: .common, foregroundColor: .white))
+                     
+                    Button(action: {
+                        isSignup = false
+                        isShowSigninForm = true
+                    }, label: {
+                        Text("Login")
+                            //.fontWeight(.semibold)
+                            .font(.system(size: getFontSize(fontStyle: .common) ,weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                            .underline(true, color: Color.white)
+                           //.modifier(TextBoldWithUnderLineModifier(fontStyle: .common, foregroundColor: .white))
+                    })
+                }
+                .padding(.top,30)
+            }//: VSTACK
+            .onChange(of: isSignup, perform: { newValue in
+                print("Chagen to \(isSignup)")
+            })
+            .blur(radius: isShowSigninForm ? 8.0 : 0, opaque: false) 
+            .padding()
+            
+            
+            if isShowSigninForm {
+                LoginForm(isShowSigninForm: $isShowSigninForm, isSignup: $isSignup)
+            } 
+        }//:ZSTACK
+        
+    }
+}
+
+struct SigninButtonsView_Previews: PreviewProvider {
+    static var previews: some View {
+        SigninView(isShowSigninForm: .constant(false))
+    }
+}
+
 
 struct LoginForm: View {
     @AppStorage("isPortrait") private var isPortrait: Bool = false
@@ -21,8 +98,6 @@ struct LoginForm: View {
     @State var repeatPassword = "1234567890"
     
     // Note: - Helper variable
-    @State var showVerifyEmailView: Bool = false
-    @State var showCompleateProfileView: Bool = false
     @State var showAlertMessage:Bool = false
     @State var alertMessage = ""
     
@@ -34,26 +109,29 @@ struct LoginForm: View {
             VStack(alignment: .leading, spacing: 10) {
                 // Note: - input email
                 Text("Email")
-                    .modifier(TextInputModifier())
+                    .modifier(TextBoldModifier(fontStyle: .common))
                     
                 HStack(spacing: 15){
                     TextField("Input Email", text: $email)
+                        .modifier(TextInputModifier())
                 }
                 Divider().background(Color.white)
                 // Note: - input Password
                 Text("Password")
-                    .modifier(TextInputModifier())
+                    .modifier(TextBoldModifier(fontStyle: .common))
                 HStack(spacing: 15){
                     TextField("Input Password", text: $password)
+                        .modifier(TextInputModifier())
                 }
                 Divider().background(Color.white)
                 
                 // Note: - input replete password
                 if isSignup {
                     Text("Replete Password")
-                        .modifier(TextInputModifier())
+                        .modifier(TextBoldModifier(fontStyle: .common))
                     HStack(spacing: 15){
                         TextField("Input replete password", text: $repeatPassword)
+                            .modifier(TextInputModifier())
                     }
                     Divider().background(Color.white)
                 }
@@ -90,17 +168,17 @@ struct LoginForm: View {
             
         }//:VStack
         .padding()
-        .background(Color.white)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+        .background(Color("frame-bg"))
         .cornerRadius(10)
         .modifier(CustomShadowModifier())
-           
-        
-        if showVerifyEmailView {
-            VerifyEmailView(showVerifyEmailView: $showVerifyEmailView, showCompleateProfileView: $showCompleateProfileView)
-        }
+ 
         
         NavigationLink(destination: HomeView(), tag: "HomeView", selection: $selectionLink) { EmptyView() }
-
+        
+        NavigationLink(destination: VerifyEmailView(selectionLink: $selectionLink), tag: "VerifyEmailView", selection: $selectionLink) { EmptyView() }
+        
+        NavigationLink(destination: UpdateProfileView(), tag: "UpdateProfileView", selection: $selectionLink) { EmptyView() }
     }
     
     // MARK: - Helper Function
@@ -113,8 +191,8 @@ struct LoginForm: View {
                     self.alertMessage = " \n\(error!.localizedDescription) \n"
                     self.showAlertMessage.toggle()
                     return
-                } else { 
-                    self.showVerifyEmailView = true
+                } else {
+                    selectionLink = "VerifyEmailView"
                 }
             }
             return
@@ -129,14 +207,14 @@ struct LoginForm: View {
                     self.showAlertMessage.toggle()
                 } else {
                     if !isEmailVerified {
-                        self.showVerifyEmailView = true
+                        selectionLink = "VerifyEmailView"
                     } else {
                         if !authVM.checkIsOnBoarding() {
-                            self.showVerifyEmailView = true
+                            selectionLink = "VerifyEmailView"
                         } else if !authVM.checkIsCompleteProfile() {
-                            self.showCompleateProfileView = true
+                            selectionLink = "UpdateProfileView"
                         } else {
-                            selectionLink = "HomeView" 
+                            selectionLink = "HomeView"
                         }
                     }
                 }

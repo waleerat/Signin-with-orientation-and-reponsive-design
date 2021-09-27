@@ -10,8 +10,8 @@ import SwiftUI
 struct ButtonTextAction: View {
     
     @Binding var buttonLabel: String
-    @State var foregroundColor:Color = Color.white
-    @State var backgroundColor:Color = Color.accentColor
+    @State var foregroundColor:Color = Color.accentColor
+    @State var backgroundColor:Color = Color.blue
     @State var frameWidth: CGFloat = 200
     @State var isActive: Bool = true
     

@@ -8,6 +8,15 @@
 import Foundation
 import SwiftUI
 
+    
+struct NavigationBarHiddenModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            .modifier(ScreenModifier())
+    }
+}
 
 struct ScreenModifier: ViewModifier {
     func body(content: Content) -> some View {
@@ -77,7 +86,7 @@ struct ImageModifier : ViewModifier {
    content
     .aspectRatio(contentMode: .fit)
     .foregroundColor(.accentColor.opacity(0.5))
-    .frame(height: screenSize.height * 0.35)
+    .frame(height: screenSize.height * 0.2)
     .cornerRadius(10)
     .modifier(CustomShadowModifier())
    }

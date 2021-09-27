@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct AuthenticationView: View {
     @AppStorage("isPortrait") private var isPortrait: Bool = false
     @State var isShowSigninForm: Bool = false
     
@@ -19,14 +19,14 @@ struct LoginView: View {
                     // Note: - Carousel SLider...
                     CarouselSlider()
                     // Login Buttons....
-                    SigninButtonsView(isShowSigninForm: $isShowSigninForm) 
+                    SigninView(isShowSigninForm: $isShowSigninForm) 
                 }
             } else {
                 HStack{
                     // Note: - Carousel SLider...
                     CarouselSlider()
                     // Login Buttons....
-                    SigninButtonsView(isShowSigninForm: $isShowSigninForm)
+                    SigninView(isShowSigninForm: $isShowSigninForm)
                 }
             }
         }.modifier(ScreenModifier()) 
@@ -34,8 +34,8 @@ struct LoginView: View {
     }
 }
 
-struct Landscape_Previews: PreviewProvider {
+struct AuthenticationView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        AuthenticationView()
     }
 }

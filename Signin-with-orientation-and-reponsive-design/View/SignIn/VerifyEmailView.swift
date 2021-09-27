@@ -8,71 +8,65 @@
 import SwiftUI
 
 struct VerifyEmailView: View {
-  //  @ObservedObject var authVM = AuthVM()
+    @Environment(\.presentationMode) var presentationMode
+    
     @ObservedObject var signupViaEmailVM = SignupViaEmailVM()
 
-    @Binding var showVerifyEmailView:Bool
-    @Binding var showCompleateProfileView:Bool
+    @Binding var selectionLink:String? 
     
     @State var checkIsOnboard:Bool = false
-    @State var CountTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
-    @State var selectionLink : String?
+    @State var CountTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    @State var count = 0
     
     var body: some View {
-        
-        VStack(spacing: 16) {
-            if !checkIsOnboard {
+        ZStack {
+            VStack(spacing: 20) {
                 Text("Verified email")
-                    .modifier(TextBoldModifier(fontStyle: .title))
+                    .modifier(TextBoldModifier(fontStyle: .header))
                  
+                Image(systemName: "envelope")
+                    .resizable()
+                    .modifier(ImageModifier())
+                
                 Text("Go to your email account and click verfiy")
                     .modifier(TextRegularModifier(fontStyle: .title))
                 
-                  IconAndTextButtonAction(systemName: "xmark",
-                                          text: "Close", backgroundColor: Color.gray) {
-                    // Note: - Code here
-                    showVerifyEmailView = false
+                Text("Note: This screend will be closed in \(30 - (count * 3)) second")
+                    .modifier(TextRegularModifier(fontStyle: .common))
+                
+                ButtonTextAction(buttonLabel: .constant("Close"), backgroundColor: Color.gray.opacity(0.7)) {
+                    self.presentationMode.wrappedValue.dismiss()
+                } 
+            } //: VSTACK
+            .padding(.horizontal)
+            .padding(.vertical, 40)
+            .cornerRadius(10)
+            .modifier(CustomShadowModifier())
+                
+            .onChange(of: checkIsOnboard , perform: { _ in
+                // Note: - if Onboard == true then cancel Count Timemer
+                if checkIsOnboard {
+                    self.CountTimer.upstream.connect().cancel()
+                    selectionLink = "UpdateProfileView"
+                    //showVerifyEmailView = false
                 }
-            } else {
-                Text("Done!! You have verified email")
-                    .modifier(TextBoldModifier(fontStyle: .title))
-                 
-                Text("Please update your profile.")
-                    .modifier(TextRegularModifier(fontStyle: .title))
+            })
+            .onReceive(CountTimer) { _ in
+                // Note: - If Onboard == false then check verify again
+                if signupViaEmailVM.isVerifyEmail {
+                    checkIsOnboard = true
+                } else {
+                    signupViaEmailVM.CheckIsVerifyEmail()
+                }
+                // Note: - Try 7 times then dissmiss view
+                count += 1
+                if count == 10 {
+                    self.presentationMode.wrappedValue.dismiss()
+                }
                 
-                
-                IconAndTextButtonAction(systemName: "xmark",
-                     text: "Close", backgroundColor: Color.gray) {
-                  // Note: - Code here
-                  showVerifyEmailView = false
-              }
             }
-        
-        } //: VSTACK
-        .padding(.horizontal)
-        .padding(.vertical, 40)
-        .background(Color.white)
-        .cornerRadius(10)
-        .modifier(CustomShadowModifier())
-            
-        .onChange(of: checkIsOnboard , perform: { _ in
-            if checkIsOnboard {
-                self.CountTimer.upstream.connect().cancel()
-                selectionLink = "UpdateProfileView"
-                //showVerifyEmailView = false
-                print(">> Go to UpdateProfileView")
-            }
-        })
-        .onReceive(CountTimer) { _ in
-            if signupViaEmailVM.isVerifyEmail {
-                checkIsOnboard = true
-            } else {
-                signupViaEmailVM.CheckIsVerifyEmail()
-            }
-            
         }
-            //: VSTACK Frame
-        NavigationLink(destination: UpdateProfileView(), tag: "UpdateProfileView", selection: $selectionLink) { EmptyView() }
+        .modifier(NavigationBarHiddenModifier())
+ 
     }
 }

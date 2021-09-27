@@ -9,14 +9,16 @@ import SwiftUI
 
 struct HomeView: View {
     @AppStorage("isPortrait") private var isPortrait: Bool = false
-    @AppStorage("isAuth") private var isAuth: Bool = false
-    var authVM = AuthVM()
-    
-    @State var selectedLink: String?
+    @ObservedObject var authVM = AuthVM()
+    @State var selectionLink: String?
     
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: 20) {
+                // Note: - LaxyVGrid  : isPortrait ? 2 : 4
+                Text("Rotate Screen to see what difference")
+                    .modifier(TextBoldModifier(fontStyle: .title))
+                Spacer()
                 LazyVGrid(columns: Array(repeating: .init(.flexible()), count: isPortrait ? 2 : 4), alignment: .center, spacing: 10) {
                     ForEach(1...12,id: \.self){ index in
                         HStack {
@@ -28,17 +30,30 @@ struct HomeView: View {
                     }
                 }
                  
-                ButtonTextAction(buttonLabel: .constant("Logout")) {
-                    authVM.logOutCurrenUser { error in
-                        self.isAuth = false
+                
+                LazyVGrid(columns: Array(repeating: .init(.flexible()), count: isPortrait ? 1 : 2), alignment: .center, spacing: 10) {
+                    
+                    ButtonTextAction(buttonLabel: .constant("Update Profile"),backgroundColor: Color.green.opacity(0.7)) {
+                        authVM.logOutCurrenUser { error in
+                            selectionLink = "UpdateProfileView"
+                        }
                     }
+                    
+                    ButtonTextAction(buttonLabel: .constant("Logout"),backgroundColor: Color.green.opacity(0.7)) {
+                        authVM.logOutCurrenUser { error in
+                            selectionLink = "ContentView"
+                        }
+                    } 
                 }
+                
                 Spacer()
+                
             }
+            .padding()
+            NavigationLink(destination: ContentView(), tag: "ContentView", selection: $selectionLink) { EmptyView() }
         }
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
-        .modifier(ScreenModifier())
+        .modifier(NavigationBarHiddenModifier())
+        
     }
 }
 
