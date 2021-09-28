@@ -126,6 +126,7 @@ if you want to separate to difference Firebase for development and production so
                   }
     
     }
+```
     
     Example for Config 2 difference Firebase.
     
@@ -147,8 +148,7 @@ if you want to separate to difference Firebase for development and production so
           }
     }
 ```
-    
-```
+ 
 ##### ContentView.swift
 The landing screen for the app
 `AuthVM().currentUser()` check if user loged in or not.
