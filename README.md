@@ -1,4 +1,4 @@
-# Firebase Signup via Email
+# Firebase Signup via Email with orientation&responsive design
 ### Xcode Version 13.0
 ###### SwiftUI, Firebase
 
@@ -29,6 +29,32 @@ Example for signup via email, verify email, update profile with orientation and 
 
 <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait.png" width="20%" height="20%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait2.png?raw=true" width="20%" height="20%">
 
+## What you should know
+You will put `@AppStorage` to every view that you want to be rotated.
+
+```sh
+@AppStorage("isPortrait") private var isPortrait: Bool = false
+```
+
+Example Grid View for landscape and portrait screen.
+```sh
+LazyVGrid(columns: Array(repeating: .init(.flexible()), count: isPortrait ? 2 : 4), alignment: .center, spacing: 10) {
+
+}
+```
+
+Example VStack/HStack View for landscape and portrait screen.
+```sh
+   if isPortrait {
+                VStack{
+                    // Note: -  UI Here
+                }
+            } else {
+                HStack{
+                    // Note: -  UI Here
+                }
+            }
+```
 
 
 ## Setup Scene Delegate
