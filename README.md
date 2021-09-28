@@ -72,7 +72,7 @@ When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t 
 
 ## Check these files
 
-##### SceneDelegate.swift
+#### SceneDelegate.swift
 
 Line 7 : [Read about @AppStorage]: <https://www.hackingwithswift.com/quick-start/swiftui/what-is-the-appstorage-property-wrapper>
 ```sh 
@@ -88,7 +88,7 @@ Line 18 : Get orientation when you rotate the phone
 ```sh
 self.isPortrait = getOrientation(scene: windowScene)
 ```
-##### Signin_with_orientation_and_reponsive_designApp.swift
+#### Signin_with_orientation_and_reponsive_designApp.swift
 
 Line 13 : 
 ```sh 
@@ -128,7 +128,7 @@ if you want to separate to difference Firebase for development and production so
     }
 ```
     
-    Example for Config 2 difference Firebase.
+Example for Config 2 difference Firebase.
     
 ```sh
      private func setupFirebaseApp() {
@@ -149,7 +149,7 @@ if you want to separate to difference Firebase for development and production so
     }
 ```
  
-##### ContentView.swift
+#### ContentView.swift
 The landing screen for the app
 `AuthVM().currentUser()` check if user loged in or not.
 
@@ -163,7 +163,7 @@ Line 12-16 :
 ```
 
 
-##### FCollectionReference.swift
+#### FCollectionReference.swift
 Collections for firebase
 
 ````sh
@@ -181,18 +181,18 @@ How to use
 FirebaseReference(.User).document(objectId).delete() { error in }
 ```
 
-##### DeviceProperties.swift
+#### DeviceProperties.swift
 The common propertiy of variables for iPhone and iPad. 
 
-##### Constants.swift
+#### Constants.swift
 The variables that I use in the project. 
 ex. fields name for dictionary because if you change fields name later you can change here as well as coller setting in Assest.
 
-##### EmailLoginVM.swift
+#### EmailLoginVM.swift
 This file use for authentication user via email. You should separate file for google and facebook. In my opinioin, it makes your life easier to imprement.
 
-##### AuthVM.swift
+#### AuthVM.swift
 This file for checking authentication status.
 
-##### UserModel.swift
+#### UserModel.swift
 The model for User Collection.
