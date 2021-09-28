@@ -30,8 +30,10 @@ Example for signup via email, verify email, update profile with orientation and 
 <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait.png" width="20%" height="20%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait2.png?raw=true" width="20%" height="20%">
 
 ## What you should know
-You will put `@AppStorage` to every view that you want to be rotated.
 
+`Note :` The orentation is detected by Scene Delegate and Xcode 13 you may notice it doesn’t have an Info.plist file. See setup below to get  Info.plist . 
+
+You will put `@AppStorage` to every view that you want to be rotated.
 ```sh
 @AppStorage("isPortrait") private var isPortrait: Bool = false
 ```
