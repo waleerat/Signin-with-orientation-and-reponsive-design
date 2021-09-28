@@ -4,6 +4,8 @@
 
 Example for signup via email, verify email, update profile with orientation and responsive design.
 
+<img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/workflow.png" width="70%" height="70%">
+
 ### How to install
 
 1. Download project to your Mac
@@ -69,3 +71,129 @@ When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t 
 </plist>
 ```
 
+## Check these files
+
+##### SceneDelegate.swift
+
+Line 7 : [Read about @AppStorage]: <https://www.hackingwithswift.com/quick-start/swiftui/what-is-the-appstorage-property-wrapper>
+```sh 
+@AppStorage("isPortrait") private var isPortrait: Bool = false
+``` 
+Line 1-12 : Get orientation when the app loaded
+```sh
+   if let windowScene = scene as? UIWindowScene {
+         self.isPortrait = getOrientation(scene: windowScene)
+   }
+```
+Line 18 : Get orientation when you rotate the phone
+```sh
+self.isPortrait = getOrientation(scene: windowScene)
+```
+##### Signin_with_orientation_and_reponsive_designApp.swift
+
+Line 13 : 
+```sh 
+@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+````
+
+Line 15-17 : 
+```sh
+  init(){
+        setupFirebaseApp()
+  }
+```
+
+Line 21-27
+```sh
+            NavigationView {
+                if AuthVM().currentUser() == nil {
+                    ContentView()
+                } else {
+                    HomeView()
+                }
+            }.navigationViewStyle(StackNavigationViewStyle())
+```
+
+Line 32 - 40
+if you want to separate to difference Firebase for development and production so you can use this code otherwise you can just use  `FirebaseApp.configure()`
+
+```sh
+    private func setupFirebaseApp() {
+       guard let plistPath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist"),
+                      let options =  FirebaseOptions(contentsOfFile: plistPath)
+                      else { return }
+                  if FirebaseApp.app() == nil{
+                      FirebaseApp.configure(options: options)
+                  }
+    
+    }
+    
+    Example for Config 2 difference Firebase.
+    
+```sh
+     private func setupFirebaseApp() {
+        #if DEBUG
+            let kGoogleServiceInfoFileName = "DEVELOPMENT-GoogleService-Info"
+        #else
+            let kGoogleServiceInfoFileName = "GoogleService-Info"
+        #endif
+        
+       guard let plistPath = Bundle.main.path(
+        forResource: kGoogleServiceInfoFileName, ofType: "plist"),
+             let options =  FirebaseOptions(contentsOfFile: plistPath)
+                      else { return }
+        
+          if FirebaseApp.app() == nil{
+              FirebaseApp.configure(options: options)
+          }
+    }
+```
+    
+```
+##### ContentView.swift
+The landing screen for the app
+`AuthVM().currentUser()` check if user loged in or not.
+
+Line 12-16 :
+```sh
+    if AuthVM().currentUser() == nil {
+        AuthenticationView()
+    } else {
+        HomeView()
+    }
+```
+
+
+##### FCollectionReference.swift
+Collections for firebase
+
+````sh
+enum FCollectionReference: String {
+    case User = "pia_user" 
+} 
+
+func FirebaseReference(_ collectionReference: FCollectionReference) -> CollectionReference {
+    
+    return Firestore.firestore().collection(collectionReference.rawValue)
+} 
+````
+How to use 
+```sh
+FirebaseReference(.User).document(objectId).delete() { error in }
+```
+
+##### DeviceProperties.swift
+The common propertiy of variables for iPhone and iPad. 
+
+##### Constants.swift
+The variables that I use in the project. 
+ex. fields name for dictionary because if you change fields name later you can change here as well as coller setting in Assest.
+
+##### EmailLoginVM.swift
+This file use for authentication user via email. You should separate file for google and facebook. In my opinioin, it makes your life easier to imprement.
+
+##### AuthVM.swift
+This file for checking authentication status.
+
+##### UserModel.swift
+The model for User Collection.
