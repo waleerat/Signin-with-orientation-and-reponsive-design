@@ -35,7 +35,7 @@ Example for signup via email, verify email, update profile with orientation and 
 When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t have an Info.plist file. 
 
 1. Go to Application Scene Minifest  -> Scene Configuration -> Application Role
-2. Delete Class Name  put `$(PRODUCT_MODULE_NAME).SceneDelegate`
+2. Delegate Class Name  put `$(PRODUCT_MODULE_NAME).SceneDelegate`
 3. Configuration Name  put  `Default Configuration`  
 
 <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/Application-Section-Role.png" width="80%" height="80%">
@@ -43,7 +43,6 @@ When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t 
 
 
 ### plist.info
-
 
 ```sh
  <?xml version="1.0" encoding="UTF-8"?>
