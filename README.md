@@ -6,7 +6,7 @@ Example for signup via email, verify email, update profile with orientation and 
 
 <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/workflow.png" width="70%" height="70%">
 
-### How to install
+## How to install
 
 1. Download project to your Mac
 <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/download-xcode.png" width="70%" height="70%">
@@ -31,7 +31,7 @@ Example for signup via email, verify email, update profile with orientation and 
 
 
 
-### Setup Scene Delegate
+## Setup Scene Delegate
 When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t have an Info.plist file. 
 
 1. Go to Application Scene Minifest  -> Scene Configuration -> Application Role
