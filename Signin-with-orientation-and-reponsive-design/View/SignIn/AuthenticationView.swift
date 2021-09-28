@@ -30,8 +30,9 @@ struct AuthenticationView: View {
                     SigninView(isShowSigninForm: $isShowSigninForm)
                 }
             }
-        }.modifier(ScreenModifier()) 
-        
+        }
+        .modifier(ScreenModifier())
+        .modifier(NavigationBarHiddenModifier())
     }
 }
 

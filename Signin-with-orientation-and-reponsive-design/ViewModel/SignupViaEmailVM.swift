@@ -10,7 +10,6 @@ import Firebase
 
 // MARK: - Sign Via email
 class SignupViaEmailVM: ObservableObject {
-    @AppStorage("isAuth") private var isAuth: Bool = false
     @ObservedObject var authVM = AuthVM()
     public var isVerifyEmail:Bool = false
     
@@ -32,7 +31,7 @@ class SignupViaEmailVM: ObservableObject {
           if error == nil {
               if authResult!.user.isEmailVerified {
                 self.authVM.downloadUserFromFirestore(userId: authResult!.user.uid, email: email) { (error) in
-                    self.isAuth = true
+                    
                     completion(error, true)
                   }
               } else {

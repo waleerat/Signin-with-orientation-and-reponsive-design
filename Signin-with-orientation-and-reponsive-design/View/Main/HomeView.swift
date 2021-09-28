@@ -48,7 +48,9 @@ struct HomeView: View {
                 
             }
             .padding()
+            
             NavigationLink(destination: ContentView(), tag: "ContentView", selection: $selectionLink) { EmptyView() }
+            NavigationLink(destination: UpdateProfileView(), tag: "UpdateProfileView", selection: $selectionLink) { EmptyView() }
         }
         .modifier(NavigationBarHiddenModifier())
         

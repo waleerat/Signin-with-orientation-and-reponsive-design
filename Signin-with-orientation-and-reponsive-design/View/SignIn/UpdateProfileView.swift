@@ -59,6 +59,17 @@ struct UpdateProfileView: View {
                     }
                     
                 }
+                .onAppear(){
+                    name = authVM.userInfo!.firstName
+                    surname = authVM.userInfo!.lastName
+                    telephone = authVM.userInfo!.phoneNumber
+                    address = authVM.userInfo!.fullAddress!
+                }
+                .padding()
+                .background(Color.accentColor.opacity(0.2))
+                .cornerRadius(10)
+                
+                Spacer()
                 
                 Button {
                     SaveToFirebase()
@@ -83,10 +94,7 @@ struct UpdateProfileView: View {
                 Spacer()
                 NavigationLink(destination: HomeView(), tag: "HomeView", selection: $selectionLink) { EmptyView() }
             }//:VStack
-            
-            .background(Color.accentColor.opacity(0.2))
             .padding()
-            .cornerRadius(10)
             
             
         }

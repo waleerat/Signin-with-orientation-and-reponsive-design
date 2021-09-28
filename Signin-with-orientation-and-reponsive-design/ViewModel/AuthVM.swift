@@ -1,5 +1,5 @@
 //
-//  MemberVM.swift
+//  AuthVM.swift
 //  StampBankAdmin
 //
 //  Created by Waleerat Gottlieb on 2021-07-20.
@@ -10,7 +10,6 @@ import SwiftUI
 import Firebase
 
 class AuthVM: ObservableObject {
-    @AppStorage("isAuth") private var isAuth: Bool = false
     @Published var userInfo: UserModel?
     @Published var isOnboard:Bool = false
     @Published var showAlertMessage: Bool = false
@@ -74,8 +73,7 @@ class AuthVM: ObservableObject {
     // MARK: - LOGOUT
      func logOutCurrenUser(completion: @escaping (_ error: Error?) -> Void) {
         do {
-            try Auth.auth().signOut()
-            self.isAuth = false
+            try Auth.auth().signOut() 
             // Note: - Remove data from userDefaults
             kUserDefault.removeObject(forKey: kCURRENTUSER)
             kUserDefault.synchronize()

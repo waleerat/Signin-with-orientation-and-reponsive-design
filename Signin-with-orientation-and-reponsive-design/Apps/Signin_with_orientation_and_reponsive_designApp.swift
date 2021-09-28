@@ -11,15 +11,15 @@ import Firebase
 @main
 struct Signin_with_orientation_and_reponsive_designApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    @AppStorage("isAuth") private var isAuth: Bool = false
+   
     init(){
         setupFirebaseApp()
     }
-    
+   
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                if !isAuth {
+                if AuthVM().currentUser() == nil {
                     ContentView()
                 } else {
                     HomeView()

@@ -1,8 +1,8 @@
 //
-//  FUser.swift
-//  StampBankAdmin
+//  UserModel.swift
+//  Signin-with-orientation-and-reponsive-design
 //
-//  Created by Waleerat Gottlieb on 2021-07-19.
+//  Created by Waleerat Gottlieb on 2021-09-26.
 //
  
 import Foundation 
