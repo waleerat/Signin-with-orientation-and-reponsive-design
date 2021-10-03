@@ -29,7 +29,6 @@ Example for signup via email, verify email, update profile with orientation and 
 
 <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait.png" width="20%" height="20%"> | <img src="https://github.com/waleerat/GitHub-Photos-Shared/blob/main/Signin-with-orientation-and-reponsive-design/portrait2.png?raw=true" width="20%" height="20%">
 
-## What you should know
 
 `Note :` The orentation is detected by Scene Delegate and Xcode 13 you may notice it doesn’t have an Info.plist file. See setup below to get  Info.plist . 
 
@@ -60,7 +59,12 @@ Example VStack/HStack View for landscape and portrait screen.
 
 
 ## Setup Scene Delegate
-When you create a new SwiftUI project with Xcode 13 you may notice it doesn’t have an Info.plist file. 
+`Note :` The orentation is detected by Scene Delegate and Xcode 13 you may notice it doesn’t have an Info.plist file. See setup below to get  Info.plist . 
+
+You will put `@AppStorage` to every view that you want to be detect orientation .
+```sh
+@AppStorage("isPortrait") private var isPortrait: Bool = false
+``` 
 
 1. Go to Application Scene Minifest  -> Scene Configuration -> Application Role
 2. Delegate Class Name  put `$(PRODUCT_MODULE_NAME).SceneDelegate`
